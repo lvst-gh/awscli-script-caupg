@@ -1,2 +1,2 @@
 # awscli-script-caupg
-simplify CA Certificate Upgrade with AWSCli script
+Simplify CA Certificate Upgrade with AWSCli script
