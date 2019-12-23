@@ -1,5 +1,5 @@
 Hi, All
-                No guess, our mailboxes must have been flooded by CA Certificate upgrade warning letters, actually not only TAM but also our customers are wondering about the special ‘LSE’ event.  I have a customer who have to finish CA certificate upgrade for more than 5 hundreds of RDS Instance before Feb 4.  It’s so terrible, we must do something here to help them out of the trouble. I have finished some works on this issue, and may be someone is doing the same thing,  to avoid duplicate work, I share to whole team,  
+      No more guess, our mailboxes must have been flooded by CA Certificate upgrade warning letters, actually not only TAM but also our customers are wondering about the special ‘LSE’ event.  I have a customer who have to finish CA certificate upgrade for more than 5 hundreds of RDS Instance before Feb 4.  It’s so terrible, we must do something here to help them out of the trouble. I have finished some works on this issue, and may be someone is doing the same thing,  to avoid duplicate work, I share to whole team,  
 1.	How long the upgrade will take, and how many downtime it will cause to business as estimation?
 Answer: 2 minutes and 7 seconds downtime when we upgrade CA certificate for two node Aurora cluster(1 writer+1 reader); 
 2.	Is there any way to upgrade CA efficiently, instead of working on console  interface?
@@ -46,7 +46,7 @@ done
 2.通过modify-db-instance更新写实例的CA证书，使用立即重启完成CA更新；
 3.完毕；
 
-                ==简化升级工作的脚本
+            ==简化升级工作的脚本
             --脚本说明
             1.对于Aurora集群，可以用以下命令完成升级
                 awscaupg.sh database-1
